@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com jQuery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minha Lista:</h1>
+        <button id="mudarTema">Mudar Tema</button>
+    </header>
+
+    <main>
+        <section id="listaItens">
+            <!-- Campo de entrada para pesquisa -->
+            <input type="text" id="filtroPesquisa" placeholder="Pesquisar na lista...">
+
+            <ul>
+                <!-- Itens da lista -->
+            </ul>
+
+            <!-- Campo de entrada de texto para adicionar novos itens -->
+            <input type="text" id="novoItem" placeholder="Inserir um novo item na lista...">
+            <button id="adicionarItem">Adicionar</button>
+        </section>
+
+        <!-- Div de notificação -->
+        <div id="notificacao" style="display: none;"></div>
+
+        <div id="contadorItens">
+            <p>Total de itens: <span id="totalItens">0</span></p>
+        </div>
+
+        <!-- Modal de Confirmação -->
+        <div id="modalConfirmacao" style="display: none;">
+            <div class="modal-content">
+                <p>Tem certeza de que deseja remover este item?</p>
+                <button id="confirmarRemocao">Confirmar</button>
+                <button id="cancelarRemocao">Cancelar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

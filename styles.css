@@ -1,0 +1,189 @@
+/* Define a fonte padrão da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #f4f4f4; /* Cor de fundo do tema claro */
+    color: #333; /* Cor do texto do tema claro */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para a mudança de tema */
+}
+
+/* Estilos do tema escuro */
+body.tema-escuro {
+    background-color: #333; /* Cor de fundo do tema escuro */
+    color: #f4f4f4; /* Cor do texto do tema escuro */
+}
+
+/* Centraliza o conteúdo do cabeçalho */
+header {
+    display: flex; /* Usado para alinhar itens no cabeçalho */
+    justify-content: space-between; /* Espaço entre título e botão */
+    align-items: center; /* Alinha verticalmente */
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+}
+
+/* Estiliza o título do cabeçalho */
+h1 {
+    margin: 0; /* Remove margens do título */
+}
+
+/* Define a largura máxima de lista itens */
+#listaItens {
+    max-width: 800px; /* Largura máxima de 800px */
+    width: 100%; /* Largura responsiva */
+}
+
+/* Define a largura do campo de pesquisa */
+#filtroPesquisa {
+    width: calc(70% + 100px); /* Aumenta a largura em 100px */
+    padding: 10px; /* Preenchimento interno */
+    margin-right: 10px; /* Espaçamento à direita */
+    margin-bottom: 20px; /* Aumenta o espaço abaixo do campo de pesquisa */
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estiliza a lista, remove os pontos e melhora o espaçamento */
+#listaItens ul {
+    list-style-type: none; /* Remove os pontos da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove margem padrão */
+    width: 100%; /* Define a largura da lista para 100% */
+    max-width: 530px; /* Largura máxima da lista */
+}
+
+/* Estiliza cada item da lista */
+#listaItens li {
+    background-color: #fff; /* Cor de fundo dos itens no tema claro */
+    margin: 10px 0; /* Espaço entre os itens */
+    padding: 10px; /* Preenchimento dos itens */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: flex; /* Usado para alinhar os botões */
+    justify-content: space-between; /* Espaçamento entre texto e botões */
+    align-items: center; /* Centraliza verticalmente o conteúdo do item da lista */
+}
+
+/* Estilos do tema escuro para os itens da lista */
+body.tema-escuro #listaItens li {
+    background-color: #444; /* Cor de fundo dos itens no tema escuro */
+}
+
+/* Estiliza os campos de entrada e botões */
+input[type="text"] {
+    width: calc(70% - 120px); /* Largura responsiva considerando o espaço para o botão */
+    max-width: none; /* Remove a largura máxima anterior */
+    padding: 10px; /* Preenchimento interno */
+    margin-right: 10px; /* Espaçamento à direita */
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estiliza os botões */
+button {
+    padding: 10px 15px; /* Preenchimento interno dos botões */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    height: 42px; /* Define uma altura para o botão, para alinhar com o campo de entrada */
+}
+
+/* Estilos do tema escuro para os botões */
+body.tema-escuro button {
+    background-color: #0056b3; /* Cor do botão no tema escuro */
+}
+
+/* Estila a área de notificação */
+#notificacao {
+    display: none; /* Esconde a notificação inicialmente */
+    margin-top: 20px; /* Espaço acima da notificação */
+    padding: 10px; /* Preenchimento interno */
+    background-color: #28a745; /* Cor de fundo da notificação */
+    color: #fff; /* Cor do texto da notificação */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto da notificação */
+    width: 500px; /* Largura fixa da notificação */
+}
+
+/* Estilos do tema escuro para a notificação */
+body.tema-escuro #notificacao {
+    background-color: #2e7d32; /* Cor de fundo da notificação no tema escuro */
+}
+
+/* Adiciona espaçamento entre os elementos */
+input[type="text"], #notificacao {
+    margin-top: 20px; /* Espaço acima de cada elemento */
+}
+
+/* Alinha os textos e botões dentro do item da lista */
+#listaItens li .itemTexto {
+    flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Ajusta o botão dentro do item da lista */
+#listaItens li button {
+    margin-left: 10px; /* Margem à esquerda para os botões */
+}
+
+/* Adiciona estilos para os campos de entrada e botões de adicionar item */
+#listaItens input[type="text"], #listaItens button {
+    display: inline-block; /* Permite que os campos e botões fiquem lado a lado */
+    max-width: 400px; /* Define a largura máxima para garantir o alinhamento */
+}
+
+#contadorItens {
+    margin-top: 20px; /* Espaço no topo */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 18px; /* Tamanho da fonte maior (opcional) */
+}
+
+#contadorItens p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+/* Estilos do modal */
+#modalConfirmacao {
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1000; /* Coloca o modal acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.modal-content {
+    background-color: white; /* Fundo branco para o modal */
+    padding: 20px; /* Preenchimento do modal */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 300px; /* Define uma largura fixa */
+}
+
+/* Botões dentro do modal */
+.modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor do botão padrão */
+    color: #fff; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos do modal no tema escuro */
+body.tema-escuro #modalConfirmacao .modal-content {
+    background-color: #444; /* Fundo escuro no tema escuro */
+    color: #f4f4f4; /* Texto branco no tema escuro */
+}
+
+body.tema-escuro .modal-content button {
+    background-color: #0056b3; /* Cor do botão no tema escuro */
+    color: #fff; /* Cor do texto no tema escuro */
+}

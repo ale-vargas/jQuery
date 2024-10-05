@@ -1,0 +1,46 @@
+Projeto com jQuery
+JavaScript, jQuery, DOM
+
+Exercícios
+
+1. Criar Estrutura Básica da Página
+Crie uma página HTML com um cabeçalho (<header>) e uma área de conteúdo principal (<main>). No cabeçalho, adicione um título da página e um botão "Mudar Tema".
+Dentro da área principal, adicione uma seção (<section>) para exibir uma lista de itens e um botão "Adicionar Item" ao final da lista.
+
+2. Adicionar Itens à Lista
+No JavaScript, implemente uma funcionalidade que permita adicionar itens à lista quando o botão "Adicionar Item" for clicado. Use um campo de entrada de texto (<input>) e um botão "Adicionar" para inserir o texto do item na lista.
+Limpe o campo de entrada após adicionar o item à lista.
+
+3. Remover Itens da Lista
+Para cada item adicionado na lista, crie um botão "Remover" ao lado dele.
+Implemente uma funcionalidade no JavaScript que remova o item da lista quando o botão "Remover" for clicado.
+
+4. Editar Itens da Lista
+Adicione um botão "Editar" próximo a cada item da lista.
+Implemente uma função que permita ao usuário editar o texto do item. Quando o botão "Editar" for clicado, transforme o item em um campo de entrada para edição. Adicione um botão "Salvar" ao lado do campo de entrada.
+Ao clicar em "Salvar", substitua o campo de entrada pelo texto editado.
+
+5. Notificação de Ação
+Implemente uma área de notificação (<div id="notificacao">) que exibe uma mensagem sempre que um item for adicionado, removido ou editado.
+Use jQuery para mostrar a notificação por 3 segundos após a ação, depois escondê-la automaticamente.
+
+6. Alternar Tema Claro/Escuro
+Implemente uma funcionalidade que permita alternar entre o tema claro e escuro da página quando o botão "Mudar Tema" no cabeçalho for clicado.
+Use classes CSS para definir os estilos de tema claro e escuro e alterne essas classes na tag <body> usando jQuery.
+
+7. Filtro de Pesquisa de Itens
+Adicione um campo de entrada (<input>) no topo da lista para que o usuário possa pesquisar itens.
+Implemente uma funcionalidade que filtre e mostre apenas os itens da lista que contêm o texto digitado no campo de pesquisa, atualizando em tempo real enquanto o usuário digita.
+
+8. Contador de Itens na Lista
+Adicione uma seção na página que exiba a quantidade total de itens presentes na lista.
+Implemente uma função que atualiza esse contador sempre que um item é adicionado, removido ou editado na lista.
+
+9. Modal de Confirmação para Remoção
+Implemente um modal de confirmação que é exibido quando o usuário tenta remover um item da lista.
+A modal deve conter a mensagem "Tem certeza de que deseja remover este item?" e dois botões: "Confirmar" e "Cancelar".
+Se o usuário clicar em "Confirmar", remova o item; se clicar em "Cancelar", feche a modal sem remover o item.
+
+10. Salvar Lista no Local Storage
+Implemente uma funcionalidade que salve a lista de itens no Local Storage sempre que ela for alterada (adicionar, editar ou remover itens).
+Ao carregar a página, verifique se há itens salvos no Local Storage e exiba-os na lista.
